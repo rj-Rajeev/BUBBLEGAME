@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(181, 173, 173);
+    
+}
+
+#pannel{
+    height: 80%;
+    width: 80%;
+    background-color: #6c6262;
+    border: 2px solid rgb(51, 49, 49);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#pannelTop{
+    width: 100%;
+    height: 10%;
+    background-color: #433f3f;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+}
+
+.elem{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: Verdana;
+    font-weight: 500;
+    color: #ffffffe0;
+}
+.box{
+    padding: 5px;
+    background-color: #fff;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: #6c6262;
+}
+
+#mainPannel{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+    width: 100%;
+    height: 90%;
+    background-color: #5b5757;
+}
+#mainPannel h1{
+    color: #fff;
+    font-weight: 900;
+    animation: forwards;
+}
+.bubble{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #e0d3d3;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+.bubble:hover{
+    cursor: pointer;
+    background-color: #212121;
+    color: #fff;
+}
+
+@media (Max-Width:600px) {
+    .elem{
+        font-size: 50%;
+    }
+}
